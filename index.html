@@ -1,69 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>SAID MAHBOUB SMART DASHBOARD</title>
-  
-  <style>
-    /* Style épuré et professionnel pour le chargement */
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #FFFFFF;
-      font-family: system-ui, -apple-system, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .loader-container {
-      text-align: center;
-    }
-
-    .spinner {
-      width: 50px;
-      height: 50px;
-      border: 5px solid #F3F3F3;
-      border-top: 5px solid #2563EB;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: 0 auto 20px auto;
-    }
-
-    .loader-text {
-      color: #0F172A;
-      font-weight: 700;
-      font-size: 16px;
-      letter-spacing: 0.5px;
-      margin: 0;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
-
-  <script>
-    // URL cible de ton application Web Google Apps Script
-    const webAppUrl = "https://script.google.com/macros/s/AKfycbxQOj8QirfqJyboa9ouquMq70Hzl57ZErs2gHuZi0SSzXfC5ukeZFBVM4GiT224kfWR/exec";
-
-    // Redirection immédiate et propre en plein écran de l'appareil
-    window.location.replace(webAppUrl);
-  </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SAID MAHBOUB SMART DASHBOARD</title>
+    <style>
+        /* Force l'application à prendre tout l'écran proprement et élimine l'espace blanc du bas */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #F8FAFC; 
+        }
+        iframe { 
+            border: none; 
+            width: 100%; 
+            height: 100%; 
+            display: block;
+        }
+    </style>
 </head>
 <body>
-
-  <!-- Écran de transition ultra-rapide affichant fièrement ton entête -->
-  <div class="loader-container">
-    <div class="spinner"></div>
-    <h6 class="loader-text">SAID MAHBOUB SMART DASHBOARD</h6>
-  </div>
-
+    <!-- L'iframe configurée pour occuper 100% de la page sans la bannière Google -->
+    <iframe src="https://script.google.com/macros/s/AKfycbxQOj8QirfqJyboa9ouquMq70Hzl57ZErs2gHuZi0SSzXfC5ukeZFBVM4GiT224kfWR/exec" allow="geolocation; microphone; camera"></iframe>
 </body>
 </html>
