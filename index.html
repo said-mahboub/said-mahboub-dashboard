@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>SAID MAHBOUB SMART DASHBOARD</title>
+    
+    <script>
+        // 🟢 DETECTION ET REDIRECTION AUTOMATIQUE POUR SMARTPHONES & TABLETTES
+        if (/Mobi|Android|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.href = "https://script.google.com/macros/s/AKfycbxQOj8QirfqJyboa9ouquMq70Hzl57ZErs2gHuZi0SSzXfC5ukeZFBVM4GiT224kfWR/exec";
+        }
+    </script>
+    
     <style>
         html, body { 
             margin: 0; 
@@ -14,8 +22,6 @@
             background-color: #F8FAFC; 
         }
         
-        /* Stratégie de contournement du crash mobile : 
-           On déplace le conteneur global, l'iframe reste intacte à 100% */
         .iframe-container {
             position: absolute;
             left: 0;
@@ -23,18 +29,18 @@
             overflow: hidden;
         }
 
-        /* 💻 CONFIGURATION ORDINATEUR */
+        /* Configuration Ordinateur (PC) */
         @media (min-width: 768px) {
             .iframe-container {
-                top: -46px; /* Masque la bannière PC standard */
+                top: -46px; 
                 height: calc(100% + 46px);
             }
         }
 
-        /* 📱 CONFIGURATION SMARTPHONE */
+        /* Configuration de secours Mobile */
         @media (max-width: 767px) {
             .iframe-container {
-                top: -65px; /* Masque la bannière mobile plus haute (texte sur 2 lignes) */
+                top: -65px; 
                 height: calc(100% + 65px);
             }
         }
