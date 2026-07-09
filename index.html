@@ -13,45 +13,26 @@
             overflow: hidden; 
             background-color: #F8FAFC; 
         }
-        
-        /* Stratégie de contournement du crash mobile : 
-           On déplace le conteneur global, l'iframe reste intacte à 100% */
+        /* Masque les débordements et force l'affichage propre */
         .iframe-container {
             position: absolute;
+            top: 0;
             left: 0;
             width: 100%;
+            height: 100%;
             overflow: hidden;
         }
-
-        /* 💻 CONFIGURATION ORDINATEUR */
-        @media (min-width: 768px) {
-            .iframe-container {
-                top: -46px; /* Masque la bannière PC standard */
-                height: calc(100% + 46px);
-            }
-        }
-
-        /* 📱 CONFIGURATION SMARTPHONE */
-        @media (max-width: 767px) {
-            .iframe-container {
-                top: -65px; /* Masque la bannière mobile plus haute (texte sur 2 lignes) */
-                height: calc(100% + 65px);
-            }
-        }
-
         iframe { 
             border: none; 
             width: 100%; 
-            height: 100%; 
-            display: block; 
+            height: 100%;
+            display: block;
         }
     </style>
 </head>
 <body>
-
     <div class="iframe-container">
         <iframe src="https://script.google.com/macros/s/AKfycbxQOj8QirfqJyboa9ouquMq70Hzl57ZErs2gHuZi0SSzXfC5ukeZFBVM4GiT224kfWR/exec" allow="geolocation; microphone; camera"></iframe>
     </div>
-
 </body>
 </html>
