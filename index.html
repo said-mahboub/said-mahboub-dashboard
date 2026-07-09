@@ -4,12 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAID MAHBOUB SMART DASHBOARD</title>
-    <script>
-        // Redirection automatique immédiate vers votre application
-        window.location.replace("https://script.google.com/macros/s/AKfycbxQOj8QirfqJyboa9ouquMq70Hzl57ZErs2gHuZi0SSzXfC5ukeZFBVM4GiT224kfWR/exec");
-    </script>
+    <style>
+        body, html { margin:0; padding:0; height:100%; font-family: system-ui, sans-serif; background-color: #F8FAFC; }
+        
+        .header-bande {
+            height: 60px;
+            background-color: #0F172A;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 14px;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .btn-access {
+            background-color: #2563EB;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+            transition: transform 0.2s;
+        }
+        .btn-access:hover { transform: scale(1.05); }
+    </style>
 </head>
-<body style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; background-color: #F8FAFC;">
-    <p>Redirection vers le Dashboard Poste 6 en cours...</p>
+<body>
+
+    <div class="header-bande">
+        ⚓ POSTE 6 — PORT DE SAFI — SAID MAHBOUB — APPLICATION
+    </div>
+
+    <div class="content-area">
+        <h2 style="color: #0F172A;">Bienvenue sur votre Dashboard</h2>
+        <p style="color: #64748B; margin-bottom: 30px;">Cliquez sur le bouton ci-dessous pour ouvrir l'application</p>
+        
+        <a href="https://script.google.com/macros/s/AKfycbxQOj8QirfqJyboa9ouquMq70Hzl57ZErs2gHuZi0SSzXfC5ukeZFBVM4GiT224kfWR/exec" class="btn-access" target="_blank">
+            Accéder à l'application
+        </a>
+    </div>
+
 </body>
 </html>
